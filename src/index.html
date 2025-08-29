@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Главная" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      <section class="main-hero section-first section-hidden">
+        <div class="container">
+          <div class="main-hero__container">
+            <div class="main-hero__slider">
+              <div class="swiper heroSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide main-hero__slide">
+                    <!-- загружают или фото или видео -->
+                    <!-- <img src="@img/hero-1.gif" alt=""> -->
+                    <video autoplay loop muted playsinline>
+                      <source src="@img/hero-video.mp4" type="video/mp4">
+                      Ваш браузер не поддерживает встроенные видео 
+                    </video>
+                    <h1 class="main-hero__title">От локального к глобальному с Profex Group</h1>
+                  </div>
+                  <div class="swiper-slide main-hero__slide">
+                    <video autoplay loop muted playsinline>
+                      <source src="@img/hero-video.mp4" type="video/mp4">
+                      Ваш браузер не поддерживает встроенные видео 
+                    </video>
+                    <h2 class="main-hero__title">От локального к глобальному с Profex Group</h2>
+                  </div>
+                  <div class="swiper-slide main-hero__slide">
+                     <video autoplay loop muted playsinline>
+                      <source src="@img/hero-video.mp4" type="video/mp4">
+                      Ваш браузер не поддерживает встроенные видео 
+                    </video>
+                    <h2 class="main-hero__title">От локального к глобальному с Profex Group</h2>
+                  </div>
+                </div>
+                <div class="hero-pagination swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="main-hero__benefits benefits">
+              <div class="benefits__card">
+                <div class="benefits__num"><span>100</span>+</div>
+                <div class="benefits__txt">Успешных Мероприятий</div>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__num"><span>1500</span>+</div>
+                <div class="benefits__txt">Клиентов</div>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__num"><span>55000</span>+</div>
+                <div class="benefits__txt">Контактов </div>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__num"><span>40</span>+</div>
+                <div class="benefits__txt">Cтран</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="main-events" class="main-events section-hidden">
+        <div class="container">
+          <div class="main-events__container">
+            <h2 class="main-events__title">Ближайшие мероприятия</h2>
+            <div class="main-events__filter">
+              <select name="">
+                <option value="">Страна</option>
+                <option value="">Казахстан</option>
+                <option value="">Россия</option>
+              </select>
+              <select name="">
+                <option value="">Отрасль</option>
+                <option value="">Отрасль 1</option>
+                <option value="">Отрасль 2</option>
+              </select>
+              <select name="">
+                <option value="">Формат мероприятия</option>
+                <option value="">Онлайн</option>
+                <option value="">Оффлайн</option>
+              </select>
+            </div>
+            <div class="main-events__cards">
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="@img/event-1.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">Gitex Nigeria</div>
+                  <div class="main-events__txt">1–2 сентября 2025 – Абуджа, 3–4 сентября 2025 – Лагос Первое крупное технологическое мероприятие бренда GITEX в Нигерии.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="@img/event-2.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">INDEX Saudi Arabia</div>
+                  <div class="main-events__txt">9–11 сентября 2025 - Эр-Рияд, Riyadh Front Exhibition & Conference Center 4-е ключевое мероприятие интерьерного дизайна на Ближнем Востоке.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="@img/event-3.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">Kids & Toys Expo Saudi Arabia</div>
+                  <div class="main-events__txt">16–18 сентября 2025 - Эр-Рияд, Riyadh Front Exhibition & Conference Center Первое ключевое мероприятие для производителей и поставщиков детских товаров и игрушек.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="@img/event-4.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">ARABLAB</div>
+                  <div class="main-events__txt">17-19 марта 2025 – Дубай, Dubai World Trade Centre (DWTC) 43-е Международное мероприятие аналитического оборудования и технологий.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="@img/event-5.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">Big 5 Construct Qatar</div>
+                  <div class="main-events__txt">12–14 октября 2025 – Доха, Doha Exhibition & Convention Center (DECC) 5-е ключевое мероприятие для выхода на рынок Катара и Персидского залива</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="@img/event-6.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">INDEX Design Qatar</div>
+                  <div class="main-events__txt">12–14 октября 2025 - Доха, Doha Exhibition & Convention Center (DECC) 4-е ключева мероприятие в области интерьерного дизайна и fit-out в Катаре.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="@img/event-7.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">Cityscape Qatar</div>
+                  <div class="main-events__txt">12–14 октября 2025 - Доха, Doha Exhibition & Convention Center (DECC) 13-е мероприятие недвижимости, объединяющая ведущих застройщиков, инвесторов, представителей госструктур, архитекторов и экспертов в области PropTech.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="@img/event-8.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">GITEX Global 2025</div>
+                  <div class="main-events__txt">13–17 октября 2025 – Дубай, Dubai World Trade Centre (DWTC) 45-е крупнейшее мероприятие технологий.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <a href="events.html" class="main-events__button button button-primary"><span>Показать еще</span></a>
+          </div>
+        </div>
+      </section>
+      <section id="main-differences" class="main-differences main-differences-desk section-pad">
+        <div class="container">
+          <div class="main-differences__container">
+            <h2 class="main-differences__title title-indent">Ключевые отличия</h2>
+            <div class="main-differences__sticky">
+              <div class="main-differences__img active"><img src="@img/differences-img.jpg" alt=""></div>
+              <div class="main-differences__img"><img src="@img/manifesto-img.jpg" alt=""></div>
+              <div class="main-differences__buttons">
+                <div class="main-differences__button active">
+                  Гибкость и контроль
+                  <span></span>
+                </div>
+                <div class="main-differences__button">
+                  Доступ и влияние
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="main-differences__content">
+              <div id="flexibility" class="main-differences__box">
+                <div class="main-differences__cards">
+                  <div class="main-differences__card">
+                    <div class="main-differences__num">01</div>
+                    <div class="main-differences__caption">Профессионализм</div>
+                    <div class="main-differences__txt">Наш многолетний опыт в индустрии мероприятий, бизнеса и государственных институтов создают прочную базу для достижения высоких результатов. С нами - надежно, профессионально и результативно.</div>
+                  </div>
+                  <div class="main-differences__card">
+                    <div class="main-differences__num">02</div>
+                    <div class="main-differences__caption">Эксклюзивность</div>
+                    <div class="main-differences__txt">Являясь эксклюзивным партнером мировых лидеров индустрии мероприятий, мы создаем уникальные возможности нашим клиентам расширить глобальное присутствие.</div>
+                  </div>
+                  <div class="main-differences__card">
+                    <div class="main-differences__num">03</div>
+                    <div class="main-differences__caption">Глобализация</div>
+                    <div class="main-differences__txt">Мы сопровождаем компании в международной экспансии: от исследования рынков до организации присутствия на ключевых событиях мира. Мы говорим на языке локальных аудиторий и учитываем все культурные и деловые нюансы.</div>
+                  </div>
+                </div>
+              </div>
+              <div id="influence" class="main-differences__box">
+                <div class="main-differences__cards">
+                  <div class="main-differences__card">
+                    <div class="main-differences__num">01</div>
+                    <div class="main-differences__caption">Профессионализм</div>
+                    <div class="main-differences__txt">Наш многолетний опыт в индустрии мероприятий, бизнеса и государственных институтов создают прочную базу для достижения высоких результатов. С нами - надежно, профессионально и результативно.</div>
+                  </div>
+                  <div class="main-differences__card">
+                    <div class="main-differences__num">02</div>
+                    <div class="main-differences__caption">Эксклюзивность</div>
+                    <div class="main-differences__txt">Являясь эксклюзивным партнером мировых лидеров индустрии мероприятий, мы создаем уникальные возможности нашим клиентам расширить глобальное присутствие.</div>
+                  </div>
+                  <div class="main-differences__card">
+                    <div class="main-differences__num">03</div>
+                    <div class="main-differences__caption">Глобализация</div>
+                    <div class="main-differences__txt">Мы сопровождаем компании в международной экспансии: от исследования рынков до организации присутствия на ключевых событиях мира. Мы говорим на языке локальных аудиторий и учитываем все культурные и деловые нюансы.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="main-differences" class="main-differences main-differences-mobile section-pad section-hidden">
+        <div class="container">
+          <div class="main-differences__container main-differences-mobile__container">
+            <div class="swiper differencesSwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="main-differences__img"><img src="@img/differences-img.jpg" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-differences__img"><img src="@img/differences-img.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="main-differences-mobile__wrap">
+              <div class="main-differences__navigation">
+                <div class="main-differences__arrows">
+                  <div class="main-differences-button main-differences-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 19V5L5 12L16 19Z" fill="#161616" fill-opacity="0.5"/>
+                    </svg>
+                  </div>
+                  <div class="main-differences-button main-differences-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 19V5L19 12L8 19Z" fill="#161616" fill-opacity="0.5"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="main-differences-pagination"></div>
+              </div>
+              <div thumbsSlider="" class="swiper differencesSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div id="flexibility" class="main-differences__box">
+                      <div class="main-differences__cards">
+                        <div class="main-differences__card">
+                          <div class="main-differences__num">01</div>
+                          <div class="main-differences__caption">Профессионализм</div>
+                          <div class="main-differences__txt">Наш многолетний опыт в индустрии мероприятий, бизнеса и государственных институтов создают прочную базу для достижения высоких результатов. С нами - надежно, профессионально и результативно.</div>
+                        </div>
+                        <div class="main-differences__card">
+                          <div class="main-differences__num">02</div>
+                          <div class="main-differences__caption">Эксклюзивность</div>
+                          <div class="main-differences__txt">Являясь эксклюзивным партнером мировых лидеров индустрии мероприятий, мы создаем уникальные возможности нашим клиентам расширить глобальное присутствие.</div>
+                        </div>
+                        <div class="main-differences__card">
+                          <div class="main-differences__num">03</div>
+                          <div class="main-differences__caption">Глобализация</div>
+                          <div class="main-differences__txt">Мы сопровождаем компании в международной экспансии: от исследования рынков до организации присутствия на ключевых событиях мира. Мы говорим на языке локальных аудиторий и учитываем все культурные и деловые нюансы.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div id="influence" class="main-differences__box">
+                      <div class="main-differences__cards">
+                        <div class="main-differences__card">
+                          <div class="main-differences__num">01</div>
+                          <div class="main-differences__caption">Профессионализм</div>
+                          <div class="main-differences__txt">Наш многолетний опыт в индустрии мероприятий, бизнеса и государственных институтов создают прочную базу для достижения высоких результатов. С нами - надежно, профессионально и результативно.</div>
+                        </div>
+                        <div class="main-differences__card">
+                          <div class="main-differences__num">02</div>
+                          <div class="main-differences__caption">Эксклюзивность</div>
+                          <div class="main-differences__txt">Являясь эксклюзивным партнером мировых лидеров индустрии мероприятий, мы создаем уникальные возможности нашим клиентам расширить глобальное присутствие.</div>
+                        </div>
+                        <div class="main-differences__card">
+                          <div class="main-differences__num">03</div>
+                          <div class="main-differences__caption">Глобализация</div>
+                          <div class="main-differences__txt">Мы сопровождаем компании в международной экспансии: от исследования рынков до организации присутствия на ключевых событиях мира. Мы говорим на языке локальных аудиторий и учитываем все культурные и деловые нюансы.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-manifesto section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="main-manifesto__container">
+            <h2 class="main-manifesto__title title-indent">Манифест Profex</h2>
+            <div class="main-manifesto__wrap" style="background-image: url(../img/manifesto-img.jpg);">
+              <div class="main-manifesto__slider">
+                <div class="swiper manifestoSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide main-manifesto__card">
+                      <div class="main-manifesto__caption">Profex Group: Надёжный Партнёр для Выхода на Международные Рынки</div>
+                      <!-- 5 строк желательно -->
+                      <div class="main-manifesto__txt">Profex Group основана в 2016 году на базе 20-летнего опыта в организации международных деловых мероприятий. С первых дней наша миссия — быть надёжным проводником для клиентов и партнёров в освоении новых, сложных рынков, помогая им расширять глобальное присутствие и усиливать позиции на мировой арене.</div>
+                    </div>
+                    <div class="swiper-slide main-manifesto__card">
+                      <div class="main-manifesto__caption">Profex Group: Надёжный Партнёр для Выхода на Международные Рынки</div>
+                      <div class="main-manifesto__txt">Profex Group основана в 2016 году на базе 20-летнего опыта в организации международных деловых мероприятий. С первых дней наша миссия — быть надёжным проводником для клиентов и партнёров в освоении новых, сложных рынков, помогая им расширять глобальное присутствие и усиливать позиции на мировой арене.</div>
+                    </div>
+                    <div class="swiper-slide main-manifesto__card">
+                      <div class="main-manifesto__caption">Profex Group: Надёжный Партнёр для Выхода на Международные Рынки</div>
+                      <div class="main-manifesto__txt">Profex Group основана в 2016 году на базе 20-летнего опыта в организации международных деловых мероприятий. С первых дней наша миссия — быть надёжным проводником для клиентов и партнёров в освоении новых, сложных рынков, помогая им расширять глобальное присутствие и усиливать позиции на мировой арене.</div>
+                    </div>
+                    <div class="swiper-slide main-manifesto__card">
+                      <div class="main-manifesto__caption">Profex Group: Надёжный Партнёр для Выхода на Международные Рынки</div>
+                      <div class="main-manifesto__txt">Profex Group основана в 2016 году на базе 20-летнего опыта в организации международных деловых мероприятий. С первых дней наша миссия — быть надёжным проводником для клиентов и партнёров в освоении новых, сложных рынков, помогая им расширять глобальное присутствие и усиливать позиции на мировой арене.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="main-manifesto-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      @@include('html/history.html') 
+      @@include('html/partners.html') 
+    </main>
+
+    @@include('html/widgets.html') 
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

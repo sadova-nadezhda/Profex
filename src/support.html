@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Главная" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      <section class="main-hero section-first section-hidden">
+        <div class="container">
+          <div class="main-hero__container">
+            <div class="main-hero__slider">
+              <div class="swiper heroSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide main-hero__slide">
+                    <img src="@img/support-img.jpg" alt="">
+                    <h1 class="main-hero__title">Стратегический подбор выставок для роста и влияния</h1>
+                  </div>
+                </div>
+                <div class="hero-pagination swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-hero__marquee hero-marquee">
+          <div class="hero-marquee__mask">
+            <ul class="hero-marquee__track">
+              <!-- Оригинальный набор -->
+              <li class="hero-marquee__item">Стратегический подбор</li>
+              <li class="hero-marquee__item">Выход на международные рынки</li>
+              <li class="hero-marquee__item">Оценка эффективности участия</li>
+              <li class="hero-marquee__item">Поиск деловых партнёров</li>
+              <li class="hero-marquee__item">Отраслевая и рыночная аналитика</li>
+              <li class="hero-marquee__item">Стратегический подбор</li>
+              <li class="hero-marquee__item">Выход на международные рынки</li>
+              <li class="hero-marquee__item">Оценка эффективности участия</li>
+              <li class="hero-marquee__item">Поиск деловых партнёров</li>
+              <li class="hero-marquee__item">Отраслевая и рыночная аналитика</li>
+              <!-- Дубликат набора: для бесконечного цикла -->
+              <li class="hero-marquee__item">Стратегический подбор</li>
+              <li class="hero-marquee__item">Выход на международные рынки</li>
+              <li class="hero-marquee__item">Оценка эффективности участия</li>
+              <li class="hero-marquee__item">Поиск деловых партнёров</li>
+              <li class="hero-marquee__item">Отраслевая и рыночная аналитика</li>
+              <li class="hero-marquee__item">Стратегический подбор</li>
+              <li class="hero-marquee__item">Выход на международные рынки</li>
+              <li class="hero-marquee__item">Оценка эффективности участия</li>
+              <li class="hero-marquee__item">Поиск деловых партнёров</li>
+              <li class="hero-marquee__item">Отраслевая и рыночная аналитика</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="about section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="about__container">
+            <h2 class="about__title title-indent">Мы подбираем не просто выставки, а точки роста для вашего бизнеса</h2>
+            <div class="about__wrap">
+              <div class="about__desc">
+                <div class="about__txt">
+                  <h4>Profex Group — ваш стратегический проводник в мир деловых выставок</h4>
+                  <p>Мы помогаем компаниям выходить на новые рынки и укреплять свои позиции на существующих, подбирая наиболее релевантные выставочные мероприятия. Наш консалтинг опирается на глубокое понимание отраслевой специфики, рыночных тенденций и бизнес-целей клиента.</p>
+                  <p>Работаем как с начинающими экспортёрами, так и с крупными игроками, желающими усилить своё присутствие в ключевых регионах.</p>
+                </div>
+              </div>
+              <div class="about__img"><img src="@img/support-img-2.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="services__container">
+            <h2 class="services__title title-indent">Что входит в услугу:</h2>
+            <div class="services__cards">
+              <div class="services__card services-card">
+                <div class="services-card__icon"><img src="@img/icon-1.svg" alt=""></div>
+                <div class="services-card__caption">Проверенные выставки</div>
+                <ul class="services-card__list list">
+                  <li>Доступ к нашему портфелю проверенных выставок в России, СНГ, Европе, Азии и на Ближнем Востоке</li>
+                </ul>
+              </div>
+              <div class="services__card services-card">
+                <div class="services-card__icon"><img src="@img/icon-2.svg" alt=""></div>
+                <div class="services-card__caption">Аналитика и исследование рынков</div>
+                <ul class="services-card__list list">
+                  <li>Анализ отраслей, целевых аудиторий и перспективных ивентов на международной арене</li>
+                </ul>
+              </div>
+              <div class="services__card services-card">
+                <div class="services-card__icon"><img src="@img/icon-3.svg" alt=""></div>
+                <div class="services-card__caption">Рекомендации по выбору</div>
+                <ul class="services-card__list list">
+                  <li>Помогаем выбрать оптимальные выставочные площадки под ваши задачи, цели и ресурсы</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="feedback__container">
+            <h2 class="feedback__title title-indent">Свяжитесь с нами для уточнения деталей</h2>
+            <div class="feedback__wrap">
+              <div class="feedback__form feedback__col">
+                <div class="feedback__caption title-indent">Форма заявки</div>
+                <form action="">
+                  <input type="tel" name="phone" placeholder="Номер телефона">
+                  <input type="email" name="email" placeholder="Эл.почта">
+                  <button class="button button-primary"><span>Запросить консультацию</span></button>
+                </form>
+              </div>
+              <div class="feedback__info feedback__col">
+                <div class="feedback__caption title-indent">Директор по продажам:</div>
+                  <div class="feedback__box">
+                    <div class="feedback__row">
+                      <span>Имя:</span>
+                      <div>Кямран Дашдамиров</div>
+                    </div>
+                    <div class="feedback__row">
+                      <span>Эл.почта:</span>
+                      <div><a href="mailto:sales@profexgroup.com">sales@profexgroup.com </a></div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

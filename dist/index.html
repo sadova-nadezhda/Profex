@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250829145704" />
+  <link rel="stylesheet" href="css/style.css?_v=20250829145704" />
+</head>
+
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__container">
+      <a href="/" class="header__logo">
+        <img src="img/logo.svg" alt="Logo" />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="button-dropdown">
+            <a href="events.html">
+              Мероприятия
+            </a>
+          </li>
+          <li class="button-dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle">
+              Поддержка 360
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" fill="white"/>
+                <path d="M12 15.4L6 9.4L7.4 8L12 12.6L16.6 8L18 9.4L12 15.4Z" fill="black"/>
+              </svg>
+            </a>
+            <div class="dropdown-menu">
+              <ul class="header__submenu">
+                <li><a href="support.html">Подбор выставок</a></li>
+                <li><a href="support.html">Рекламные кампании</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="button-dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle">
+              Новости и Медиа
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" fill="white"/>
+                <path d="M12 15.4L6 9.4L7.4 8L12 12.6L16.6 8L18 9.4L12 15.4Z" fill="black"/>
+              </svg>
+            </a>
+            <div class="dropdown-menu">
+              <ul class="header__submenu">
+                <li><a href="post.html">Новости и Медиа</a></li>
+                <li><a href="reports.html">Отчеты</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="button-dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle">
+              О нас
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" fill="white"/>
+                <path d="M12 15.4L6 9.4L7.4 8L12 12.6L16.6 8L18 9.4L12 15.4Z" fill="black"/>
+              </svg>
+            </a>
+            <div class="dropdown-menu">
+              <ul class="header__submenu">
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="teams.html">Наши специалисты</a></li>
+                <li><a href="vacancies.html">Вакансии</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <select name="lang" class="header__lang">
+          <option value="">Русский</option>
+          <option value="">English</option>
+        </select>
+      </nav>
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="main-hero section-first section-hidden">
+        <div class="container">
+          <div class="main-hero__container">
+            <div class="main-hero__slider">
+              <div class="swiper heroSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide main-hero__slide">
+                    <!-- загружают или фото или видео -->
+                    <!-- <img src="img/hero-1.gif" alt=""> -->
+                    <video autoplay loop muted playsinline>
+                      <source src="img/hero-video.mp4" type="video/mp4">
+                      Ваш браузер не поддерживает встроенные видео 
+                    </video>
+                    <h1 class="main-hero__title">От локального к глобальному с Profex Group</h1>
+                  </div>
+                  <div class="swiper-slide main-hero__slide">
+                    <video autoplay loop muted playsinline>
+                      <source src="img/hero-video.mp4" type="video/mp4">
+                      Ваш браузер не поддерживает встроенные видео 
+                    </video>
+                    <h2 class="main-hero__title">От локального к глобальному с Profex Group</h2>
+                  </div>
+                  <div class="swiper-slide main-hero__slide">
+                     <video autoplay loop muted playsinline>
+                      <source src="img/hero-video.mp4" type="video/mp4">
+                      Ваш браузер не поддерживает встроенные видео 
+                    </video>
+                    <h2 class="main-hero__title">От локального к глобальному с Profex Group</h2>
+                  </div>
+                </div>
+                <div class="hero-pagination swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="main-hero__benefits benefits">
+              <div class="benefits__card">
+                <div class="benefits__num"><span>100</span>+</div>
+                <div class="benefits__txt">Успешных Мероприятий</div>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__num"><span>1500</span>+</div>
+                <div class="benefits__txt">Клиентов</div>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__num"><span>55000</span>+</div>
+                <div class="benefits__txt">Контактов </div>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__num"><span>40</span>+</div>
+                <div class="benefits__txt">Cтран</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="main-events" class="main-events section-hidden">
+        <div class="container">
+          <div class="main-events__container">
+            <h2 class="main-events__title">Ближайшие мероприятия</h2>
+            <div class="main-events__filter">
+              <select name="">
+                <option value="">Страна</option>
+                <option value="">Казахстан</option>
+                <option value="">Россия</option>
+              </select>
+              <select name="">
+                <option value="">Отрасль</option>
+                <option value="">Отрасль 1</option>
+                <option value="">Отрасль 2</option>
+              </select>
+              <select name="">
+                <option value="">Формат мероприятия</option>
+                <option value="">Онлайн</option>
+                <option value="">Оффлайн</option>
+              </select>
+            </div>
+            <div class="main-events__cards">
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="img/event-1.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">Gitex Nigeria</div>
+                  <div class="main-events__txt">1–2 сентября 2025 – Абуджа, 3–4 сентября 2025 – Лагос Первое крупное технологическое мероприятие бренда GITEX в Нигерии.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="img/event-2.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">INDEX Saudi Arabia</div>
+                  <div class="main-events__txt">9–11 сентября 2025 - Эр-Рияд, Riyadh Front Exhibition & Conference Center 4-е ключевое мероприятие интерьерного дизайна на Ближнем Востоке.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="img/event-3.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">Kids & Toys Expo Saudi Arabia</div>
+                  <div class="main-events__txt">16–18 сентября 2025 - Эр-Рияд, Riyadh Front Exhibition & Conference Center Первое ключевое мероприятие для производителей и поставщиков детских товаров и игрушек.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="img/event-4.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">ARABLAB</div>
+                  <div class="main-events__txt">17-19 марта 2025 – Дубай, Dubai World Trade Centre (DWTC) 43-е Международное мероприятие аналитического оборудования и технологий.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="img/event-5.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">Big 5 Construct Qatar</div>
+                  <div class="main-events__txt">12–14 октября 2025 – Доха, Doha Exhibition & Convention Center (DECC) 5-е ключевое мероприятие для выхода на рынок Катара и Персидского залива</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="img/event-6.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">INDEX Design Qatar</div>
+                  <div class="main-events__txt">12–14 октября 2025 - Доха, Doha Exhibition & Convention Center (DECC) 4-е ключева мероприятие в области интерьерного дизайна и fit-out в Катаре.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="img/event-7.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">Cityscape Qatar</div>
+                  <div class="main-events__txt">12–14 октября 2025 - Доха, Doha Exhibition & Convention Center (DECC) 13-е мероприятие недвижимости, объединяющая ведущих застройщиков, инвесторов, представителей госструктур, архитекторов и экспертов в области PropTech.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+              <a class="main-events__card" href="events-inner.html">
+                <div class="main-events__img"><img src="img/event-8.png" alt=""></div>
+                <div class="main-events__info">
+                  <div class="main-events__caption">GITEX Global 2025</div>
+                  <div class="main-events__txt">13–17 октября 2025 – Дубай, Dubai World Trade Centre (DWTC) 45-е крупнейшее мероприятие технологий.</div>
+                  <ul class="main-events__list">
+                    <li>24–27 ноября</li>
+                    <li>ПН-ЧТ</li>
+                    <li>19:00</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <a href="events.html" class="main-events__button button button-primary"><span>Показать еще</span></a>
+          </div>
+        </div>
+      </section>
+      <section id="main-differences" class="main-differences main-differences-desk section-pad">
+        <div class="container">
+          <div class="main-differences__container">
+            <h2 class="main-differences__title title-indent">Ключевые отличия</h2>
+            <div class="main-differences__sticky">
+              <div class="main-differences__img active"><img src="img/differences-img.jpg" alt=""></div>
+              <div class="main-differences__img"><img src="img/manifesto-img.jpg" alt=""></div>
+              <div class="main-differences__buttons">
+                <div class="main-differences__button active">
+                  Гибкость и контроль
+                  <span></span>
+                </div>
+                <div class="main-differences__button">
+                  Доступ и влияние
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="main-differences__content">
+              <div id="flexibility" class="main-differences__box">
+                <div class="main-differences__cards">
+                  <div class="main-differences__card">
+                    <div class="main-differences__num">01</div>
+                    <div class="main-differences__caption">Профессионализм</div>
+                    <div class="main-differences__txt">Наш многолетний опыт в индустрии мероприятий, бизнеса и государственных институтов создают прочную базу для достижения высоких результатов. С нами - надежно, профессионально и результативно.</div>
+                  </div>
+                  <div class="main-differences__card">
+                    <div class="main-differences__num">02</div>
+                    <div class="main-differences__caption">Эксклюзивность</div>
+                    <div class="main-differences__txt">Являясь эксклюзивным партнером мировых лидеров индустрии мероприятий, мы создаем уникальные возможности нашим клиентам расширить глобальное присутствие.</div>
+                  </div>
+                  <div class="main-differences__card">
+                    <div class="main-differences__num">03</div>
+                    <div class="main-differences__caption">Глобализация</div>
+                    <div class="main-differences__txt">Мы сопровождаем компании в международной экспансии: от исследования рынков до организации присутствия на ключевых событиях мира. Мы говорим на языке локальных аудиторий и учитываем все культурные и деловые нюансы.</div>
+                  </div>
+                </div>
+              </div>
+              <div id="influence" class="main-differences__box">
+                <div class="main-differences__cards">
+                  <div class="main-differences__card">
+                    <div class="main-differences__num">01</div>
+                    <div class="main-differences__caption">Профессионализм</div>
+                    <div class="main-differences__txt">Наш многолетний опыт в индустрии мероприятий, бизнеса и государственных институтов создают прочную базу для достижения высоких результатов. С нами - надежно, профессионально и результативно.</div>
+                  </div>
+                  <div class="main-differences__card">
+                    <div class="main-differences__num">02</div>
+                    <div class="main-differences__caption">Эксклюзивность</div>
+                    <div class="main-differences__txt">Являясь эксклюзивным партнером мировых лидеров индустрии мероприятий, мы создаем уникальные возможности нашим клиентам расширить глобальное присутствие.</div>
+                  </div>
+                  <div class="main-differences__card">
+                    <div class="main-differences__num">03</div>
+                    <div class="main-differences__caption">Глобализация</div>
+                    <div class="main-differences__txt">Мы сопровождаем компании в международной экспансии: от исследования рынков до организации присутствия на ключевых событиях мира. Мы говорим на языке локальных аудиторий и учитываем все культурные и деловые нюансы.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="main-differences" class="main-differences main-differences-mobile section-pad section-hidden">
+        <div class="container">
+          <div class="main-differences__container main-differences-mobile__container">
+            <div class="swiper differencesSwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="main-differences__img"><img src="img/differences-img.jpg" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-differences__img"><img src="img/differences-img.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="main-differences-mobile__wrap">
+              <div class="main-differences__navigation">
+                <div class="main-differences__arrows">
+                  <div class="main-differences-button main-differences-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 19V5L5 12L16 19Z" fill="#161616" fill-opacity="0.5"/>
+                    </svg>
+                  </div>
+                  <div class="main-differences-button main-differences-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 19V5L19 12L8 19Z" fill="#161616" fill-opacity="0.5"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="main-differences-pagination"></div>
+              </div>
+              <div thumbsSlider="" class="swiper differencesSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div id="flexibility" class="main-differences__box">
+                      <div class="main-differences__cards">
+                        <div class="main-differences__card">
+                          <div class="main-differences__num">01</div>
+                          <div class="main-differences__caption">Профессионализм</div>
+                          <div class="main-differences__txt">Наш многолетний опыт в индустрии мероприятий, бизнеса и государственных институтов создают прочную базу для достижения высоких результатов. С нами - надежно, профессионально и результативно.</div>
+                        </div>
+                        <div class="main-differences__card">
+                          <div class="main-differences__num">02</div>
+                          <div class="main-differences__caption">Эксклюзивность</div>
+                          <div class="main-differences__txt">Являясь эксклюзивным партнером мировых лидеров индустрии мероприятий, мы создаем уникальные возможности нашим клиентам расширить глобальное присутствие.</div>
+                        </div>
+                        <div class="main-differences__card">
+                          <div class="main-differences__num">03</div>
+                          <div class="main-differences__caption">Глобализация</div>
+                          <div class="main-differences__txt">Мы сопровождаем компании в международной экспансии: от исследования рынков до организации присутствия на ключевых событиях мира. Мы говорим на языке локальных аудиторий и учитываем все культурные и деловые нюансы.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div id="influence" class="main-differences__box">
+                      <div class="main-differences__cards">
+                        <div class="main-differences__card">
+                          <div class="main-differences__num">01</div>
+                          <div class="main-differences__caption">Профессионализм</div>
+                          <div class="main-differences__txt">Наш многолетний опыт в индустрии мероприятий, бизнеса и государственных институтов создают прочную базу для достижения высоких результатов. С нами - надежно, профессионально и результативно.</div>
+                        </div>
+                        <div class="main-differences__card">
+                          <div class="main-differences__num">02</div>
+                          <div class="main-differences__caption">Эксклюзивность</div>
+                          <div class="main-differences__txt">Являясь эксклюзивным партнером мировых лидеров индустрии мероприятий, мы создаем уникальные возможности нашим клиентам расширить глобальное присутствие.</div>
+                        </div>
+                        <div class="main-differences__card">
+                          <div class="main-differences__num">03</div>
+                          <div class="main-differences__caption">Глобализация</div>
+                          <div class="main-differences__txt">Мы сопровождаем компании в международной экспансии: от исследования рынков до организации присутствия на ключевых событиях мира. Мы говорим на языке локальных аудиторий и учитываем все культурные и деловые нюансы.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-manifesto section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="main-manifesto__container">
+            <h2 class="main-manifesto__title title-indent">Манифест Profex</h2>
+            <div class="main-manifesto__wrap" style="background-image: url(../img/manifesto-img.jpg);">
+              <div class="main-manifesto__slider">
+                <div class="swiper manifestoSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide main-manifesto__card">
+                      <div class="main-manifesto__caption">Profex Group: Надёжный Партнёр для Выхода на Международные Рынки</div>
+                      <!-- 5 строк желательно -->
+                      <div class="main-manifesto__txt">Profex Group основана в 2016 году на базе 20-летнего опыта в организации международных деловых мероприятий. С первых дней наша миссия — быть надёжным проводником для клиентов и партнёров в освоении новых, сложных рынков, помогая им расширять глобальное присутствие и усиливать позиции на мировой арене.</div>
+                    </div>
+                    <div class="swiper-slide main-manifesto__card">
+                      <div class="main-manifesto__caption">Profex Group: Надёжный Партнёр для Выхода на Международные Рынки</div>
+                      <div class="main-manifesto__txt">Profex Group основана в 2016 году на базе 20-летнего опыта в организации международных деловых мероприятий. С первых дней наша миссия — быть надёжным проводником для клиентов и партнёров в освоении новых, сложных рынков, помогая им расширять глобальное присутствие и усиливать позиции на мировой арене.</div>
+                    </div>
+                    <div class="swiper-slide main-manifesto__card">
+                      <div class="main-manifesto__caption">Profex Group: Надёжный Партнёр для Выхода на Международные Рынки</div>
+                      <div class="main-manifesto__txt">Profex Group основана в 2016 году на базе 20-летнего опыта в организации международных деловых мероприятий. С первых дней наша миссия — быть надёжным проводником для клиентов и партнёров в освоении новых, сложных рынков, помогая им расширять глобальное присутствие и усиливать позиции на мировой арене.</div>
+                    </div>
+                    <div class="swiper-slide main-manifesto__card">
+                      <div class="main-manifesto__caption">Profex Group: Надёжный Партнёр для Выхода на Международные Рынки</div>
+                      <div class="main-manifesto__txt">Profex Group основана в 2016 году на базе 20-летнего опыта в организации международных деловых мероприятий. С первых дней наша миссия — быть надёжным проводником для клиентов и партнёров в освоении новых, сложных рынков, помогая им расширять глобальное присутствие и усиливать позиции на мировой арене.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="main-manifesto-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="main-history" class="main-history section-pad-bottom section-hidden">
+  <div class="container">
+    <div class="main-history__container">
+      <h2 class="main-history__title title-indent">Отзывы и истории успеха</h2>
+      <div class="main-history__slider">
+          <div class="swiper historySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide main-history__card">
+                <div class="main-history__img"><img src="img/reviews-1.png" alt=""></div>
+                <div class="main-history__txt">«Profex — это не подрядчик, а партнёр с большой буквы. Благодаря им мы вышли на рынок ОАЭ без лишней суеты и с нужными контактами уже на старте.»</div>
+                <div class="main-history__author">Айдана С., директор по развитию,AV Gallery Group</div>
+              </div>
+              <div class="swiper-slide main-history__card">
+                <div class="main-history__img"><img src="img/reviews-2.png" alt=""></div>
+                <div class="main-history__txt">«Profex — это не подрядчик, а партнёр с большой буквы. Благодаря им мы вышли на рынок ОАЭ без лишней суеты и с нужными контактами уже на старте.»</div>
+                <div class="main-history__author">Айдана С., директор по развитию,AV Gallery Group</div>
+              </div>
+              <div class="swiper-slide main-history__card">
+                <div class="main-history__img"><img src="img/reviews-3.png" alt=""></div>
+                <div class="main-history__txt">«Profex — это не подрядчик, а партнёр с большой буквы. Благодаря им мы вышли на рынок ОАЭ без лишней суеты и с нужными контактами уже на старте.»</div>
+                <div class="main-history__author">Айдана С., директор по развитию,AV Gallery Group</div>
+              </div>
+              <div class="swiper-slide main-history__card">
+                <div class="main-history__img"><img src="img/reviews-4.png" alt=""></div>
+                <div class="main-history__txt">«Profex — это не подрядчик, а партнёр с большой буквы. Благодаря им мы вышли на рынок ОАЭ без лишней суеты и с нужными контактами уже на старте.»</div>
+                <div class="main-history__author">Айдана С., директор по развитию,AV Gallery Group</div>
+              </div>
+              <div class="swiper-slide main-history__card">
+                <div class="main-history__img"><img src="img/reviews-2.png" alt=""></div>
+                <div class="main-history__txt">«Profex — это не подрядчик, а партнёр с большой буквы. Благодаря им мы вышли на рынок ОАЭ без лишней суеты и с нужными контактами уже на старте.»</div>
+                <div class="main-history__author">Айдана С., директор по развитию,AV Gallery Group</div>
+              </div>
+              <div class="swiper-slide main-history__card">
+                <div class="main-history__img"><img src="img/reviews-3.png" alt=""></div>
+                <div class="main-history__txt">«Profex — это не подрядчик, а партнёр с большой буквы. Благодаря им мы вышли на рынок ОАЭ без лишней суеты и с нужными контактами уже на старте.»</div>
+                <div class="main-history__author">Айдана С., директор по развитию,AV Gallery Group</div>
+              </div>
+            </div>
+          </div>
+          <div class="main-history-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section> 
+      <section class="main-partners section-pad-bottom section-hidden">
+  <div class="container">
+    <div class="main-partners__container">
+      <h2 class="main-partners__title title-indent">Наши партнеры</h2>
+    </div>
+  </div>
+  <div class="main-partners__marquee partners-marquee" aria-label="Партнёры">
+    <div class="partners-marquee__mask">
+      <ul class="partners-marquee__track">
+        <!-- Оригинальный набор для хорошей работы нужно 10 штук -->
+        <li class="partners-marquee__item">
+          <img src="img/partner-1.png" alt="Партнёр 1" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-2.png" alt="Партнёр 2" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-3.png" alt="Партнёр 3" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-4.png" alt="Партнёр 4" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-5.png" alt="Партнёр 5" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-1.png" alt="Партнёр 1" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-2.png" alt="Партнёр 2" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-3.png" alt="Партнёр 3" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-4.png" alt="Партнёр 4" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-5.png" alt="Партнёр 5" loading="lazy" />
+        </li>
+        <!-- Дубликат набора: для бесконечного цикла -->
+        <li class="partners-marquee__item">
+          <img src="img/partner-1.png" alt="Партнёр 1" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-2.png" alt="Партнёр 2" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-3.png" alt="Партнёр 3" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-4.png" alt="Партнёр 4" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-5.png" alt="Партнёр 5" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-1.png" alt="Партнёр 1" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-2.png" alt="Партнёр 2" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-3.png" alt="Партнёр 3" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-4.png" alt="Партнёр 4" loading="lazy" />
+        </li>
+        <li class="partners-marquee__item">
+          <img src="img/partner-5.png" alt="Партнёр 5" loading="lazy" />
+        </li>
+      </ul>
+    </div>
+  </div>
+</section> 
+    </main>
+
+    <div class="widgets">
+  <a href="#" class="widget" target="_blank">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_686_2129)">
+      <path d="M19.5873 3.008C20.4308 3.008 20.6528 3.646 20.4033 5.144C20.1178 6.857 19.2953 12.5285 18.6393 16.059C18.3883 17.41 17.9358 17.9925 17.2773 17.9925C16.9153 17.9925 16.4913 17.8165 16.0043 17.495C15.3443 17.059 12.0123 14.8555 11.2888 14.338C10.6288 13.8665 9.7183 13.299 10.8603 12.182C11.2668 11.784 13.9303 9.24049 16.0053 7.26099C16.2268 7.04949 16.0413 6.727 15.7953 6.727C15.7393 6.727 15.6798 6.744 15.6218 6.7825C12.8248 8.6375 8.9463 11.212 8.4528 11.5475C7.9593 11.8825 7.4783 12.0975 6.8373 12.0975C6.5098 12.0975 6.1403 12.0415 5.7058 11.9165C4.7343 11.6375 3.7858 11.305 3.4163 11.178C1.9938 10.69 2.3313 10.0575 3.7128 9.44949C9.2518 7.013 16.4193 4.042 17.4088 3.631C18.3728 3.2305 19.0888 3.008 19.5873 3.008ZM19.5873 1.508C18.9033 1.508 18.0798 1.7285 16.8343 2.245L16.6848 2.307C11.3673 4.515 6.5458 6.564 3.1088 8.07599C2.5718 8.3125 0.938301 9.031 1.0018 10.534C1.0288 11.1825 1.3858 12.0665 2.9298 12.596L3.0438 12.635C3.4748 12.7835 4.3723 13.093 5.2923 13.3575C5.8523 13.5185 6.3583 13.5965 6.8378 13.5965C7.6698 13.5965 8.3143 13.359 8.8183 13.0825C8.8158 13.1665 8.8178 13.251 8.8243 13.336C8.9153 14.492 9.8093 15.126 10.3433 15.505L10.4178 15.558C11.2063 16.122 14.7748 18.4795 15.1788 18.746C15.9393 19.248 16.6258 19.4915 17.2783 19.4915C18.3043 19.4915 19.6298 18.9435 20.1148 16.3325C20.5753 13.856 21.1073 10.3965 21.4958 7.87049C21.6613 6.79249 21.7973 5.90849 21.8838 5.39C22.0583 4.343 22.1383 3.157 21.4098 2.2975C21.1038 1.9375 20.5398 1.508 19.5873 1.508Z" fill="white"/>
+      </g>
+      <defs>
+      <clipPath id="clip0_686_2129">
+      <rect width="24" height="24" fill="white"/>
+      </clipPath>
+      </defs>
+    </svg>
+  </a>
+  <a href="#" class="widget" target="_blank">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9409 4.55911C16.9653 2.58353 14.3403 1.49319 11.5444 1.49319C5.78174 1.49319 1.08887 6.18265 1.08887 11.9453C1.08545 13.7876 1.56738 15.5855 2.4834 17.1714L1 22.5889L6.54395 21.1328C8.06836 21.9668 9.79102 22.4043 11.541 22.4077H11.5444C17.3071 22.4077 21.9966 17.7183 22 11.9522C22 9.1597 20.9131 6.5347 18.9409 4.55911ZM11.5444 20.6407H11.541C9.98242 20.6407 8.45117 20.2202 7.11817 19.4307L6.80029 19.2427L3.50879 20.104L4.38721 16.898L4.18213 16.5699C3.31055 15.1856 2.85254 13.586 2.85254 11.9453C2.85254 7.15677 6.75244 3.26028 11.5479 3.26028C13.8687 3.26028 16.0493 4.16605 17.6899 5.80667C19.3306 7.45071 20.2329 9.63138 20.2329 11.9522C20.2329 16.7442 16.333 20.6407 11.5444 20.6407ZM16.3091 14.1328C16.0493 14.003 14.7642 13.3706 14.5249 13.2852C14.2856 13.1963 14.1113 13.1553 13.937 13.4151C13.7627 13.6783 13.2637 14.2661 13.1099 14.4405C12.9595 14.6114 12.8057 14.6353 12.5459 14.5054C12.2827 14.3755 11.4419 14.0987 10.4438 13.2066C9.66797 12.5161 9.1416 11.6582 8.99121 11.3985C8.8374 11.1353 8.97412 10.9951 9.104 10.8653C9.22363 10.7491 9.36719 10.5611 9.49707 10.4073C9.62695 10.2569 9.67139 10.1475 9.76025 9.97318C9.8457 9.79886 9.80127 9.64505 9.73633 9.51517C9.67139 9.38528 9.14844 8.09671 8.92969 7.57376C8.71777 7.06448 8.50244 7.13626 8.3418 7.12601C8.19141 7.11917 8.01709 7.11917 7.84277 7.11917C7.66846 7.11917 7.38477 7.18411 7.14551 7.4473C6.90625 7.70706 6.23291 8.33939 6.23291 9.62454C6.23291 10.9097 7.16943 12.1538 7.29932 12.3282C7.4292 12.4991 9.1416 15.1377 11.7632 16.2691C12.3853 16.5391 12.8706 16.6997 13.25 16.8194C13.8755 17.0176 14.4463 16.9903 14.8975 16.9253C15.3999 16.8501 16.4424 16.293 16.6611 15.6812C16.8765 15.0728 16.8765 14.5498 16.8115 14.4405C16.7466 14.3311 16.5723 14.2661 16.3091 14.1328Z" fill="white"/>
+    </svg>
+  </a>
+  <a href="#" class="widget" target="_blank">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4.27256 3.528C1.87256 5.832 1.68056 6.672 2.97656 9.456C4.08056 11.856 5.52056 13.944 7.53656 16.032C10.3686 18.984 15.1926 21.84 17.3286 21.84C18.1926 21.84 18.4566 21.672 20.0646 20.112C21.6006 18.624 21.8406 18.288 21.8406 17.544C21.8406 16.824 21.6006 16.464 19.8486 14.712C17.4246 12.288 16.8966 12.168 15.2646 13.68L14.2326 14.64L13.1766 13.944C11.9766 13.176 10.2966 11.448 9.74456 10.392C9.38456 9.696 9.40856 9.648 10.3446 8.736C11.0646 8.04 11.2806 7.632 11.2806 7.008C11.2806 6.312 10.9926 5.904 9.28856 4.176C6.74456 1.584 6.38456 1.536 4.27256 3.528ZM8.11256 5.592L9.60056 7.104L8.52056 8.16C7.92056 8.736 7.44056 9.36 7.44056 9.528C7.44056 9.72 7.72856 10.416 8.06456 11.112C8.90456 12.744 11.2566 15.048 13.1766 16.056L14.6886 16.848L15.8646 15.696L17.0406 14.544L18.6006 16.08L20.1606 17.616L19.0326 18.768C18.4086 19.392 17.7126 19.968 17.4966 20.04C17.2566 20.112 16.3686 19.872 15.5046 19.464C10.8246 17.352 7.17656 13.824 4.87256 9.24C3.62456 6.768 3.62456 6.84 5.06456 5.376C5.76056 4.656 6.40856 4.08 6.48056 4.08C6.55256 4.08 7.29656 4.752 8.11256 5.592Z" fill="white"/>
+    </svg>
+  </a>
+</div> 
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <a class="footer__logo footer__col" href="/"><img src="img/footer-logo.svg" alt="Footer Logo"></a>
+      <div class="footer__socials footer__col">
+        <div class="footer__caption text-up">Наши официальные каналы в социальных сетях</div>
+        <div class="footer__list">
+          <a href="#" class="footer__social" target="_blank">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.83171 0.5C2.61587 0.5 0 3.11829 0 6.33496V14.6683C0 17.8841 2.61829 20.5 5.83496 20.5H14.1683C17.3841 20.5 20 17.8817 20 14.665V6.33171C20 3.11587 17.3817 0.5 14.165 0.5H5.83171ZM15.8333 3.83333C16.2933 3.83333 16.6667 4.20667 16.6667 4.66667C16.6667 5.12667 16.2933 5.5 15.8333 5.5C15.3733 5.5 15 5.12667 15 4.66667C15 4.20667 15.3733 3.83333 15.8333 3.83333ZM10 5.5C12.7575 5.5 15 7.7425 15 10.5C15 13.2575 12.7575 15.5 10 15.5C7.2425 15.5 5 13.2575 5 10.5C5 7.7425 7.2425 5.5 10 5.5ZM10 7.16667C9.11594 7.16667 8.2681 7.51786 7.64298 8.14298C7.01786 8.7681 6.66667 9.61594 6.66667 10.5C6.66667 11.3841 7.01786 12.2319 7.64298 12.857C8.2681 13.4821 9.11594 13.8333 10 13.8333C10.8841 13.8333 11.7319 13.4821 12.357 12.857C12.9821 12.2319 13.3333 11.3841 13.3333 10.5C13.3333 9.61594 12.9821 8.7681 12.357 8.14298C11.7319 7.51786 10.8841 7.16667 10 7.16667Z" fill="black"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social" target="_blank">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.619 0.5H2.38095C1.06667 0.5 0 1.56667 0 2.88095V18.119C0 19.4333 1.06667 20.5 2.38095 20.5H17.619C18.9333 20.5 20 19.4333 20 18.119V2.88095C20 1.56667 18.9333 0.5 17.619 0.5ZM6.19048 8.11905V17.1667H3.33333V8.11905H6.19048ZM3.33333 5.48571C3.33333 4.81905 3.90476 4.30952 4.7619 4.30952C5.61905 4.30952 6.15714 4.81905 6.19048 5.48571C6.19048 6.15238 5.65714 6.69048 4.7619 6.69048C3.90476 6.69048 3.33333 6.15238 3.33333 5.48571ZM16.6667 17.1667H13.8095C13.8095 17.1667 13.8095 12.7571 13.8095 12.4048C13.8095 11.4524 13.3333 10.5 12.1429 10.481H12.1048C10.9524 10.481 10.4762 11.4619 10.4762 12.4048C10.4762 12.8381 10.4762 17.1667 10.4762 17.1667H7.61905V8.11905H10.4762V9.33809C10.4762 9.33809 11.3952 8.11905 13.2429 8.11905C15.1333 8.11905 16.6667 9.41905 16.6667 12.0524V17.1667Z" fill="black"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social" target="_blank">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.6667 0.5H3.33333C1.4925 0.5 0 1.9925 0 3.83333V17.1667C0 19.0075 1.4925 20.5 3.33333 20.5H10.4167V13.4167H7.91667V10.5H10.4167V8.41667C10.4167 5.5 12.0833 3.83333 14.5833 3.83333C15.8887 3.83333 16.6667 4.25 16.6667 4.25V6.75H15C13.8083 6.75 13.3333 7.62208 13.3333 8.41667V10.5H16.25L15.8333 13.4167H13.3333V20.5H16.6667C18.5075 20.5 20 19.0075 20 17.1667V3.83333C20 1.9925 18.5075 0.5 16.6667 0.5Z" fill="black"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social" target="_blank">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.0154 7.58517L8.9438 11.7306L8.70516 11.9261C8.65274 11.9676 8.61852 12.0279 8.60971 12.0943L8.5563 12.5352L8.40971 13.7738C8.41107 13.7889 8.40638 13.8039 8.39668 13.8155C8.38699 13.8271 8.37307 13.8344 8.35801 13.8357C8.34294 13.8371 8.32795 13.8324 8.31633 13.8227C8.30472 13.813 8.29743 13.7991 8.29607 13.784L7.88357 12.5454L7.45744 11.2783C7.43926 11.2216 7.44158 11.1602 7.46401 11.105C7.48644 11.0497 7.52755 11.0041 7.58016 10.9761L12.8574 7.95108L13.8506 7.38289C13.9949 7.2988 14.1427 7.48062 14.0154 7.58517Z" fill="black"/>
+              <path d="M17.2727 0.5H2.72727C2.00396 0.5 1.31026 0.787337 0.7988 1.2988C0.287337 1.81026 0 2.50396 0 3.22727L0 17.7727C0 18.496 0.287337 19.1897 0.7988 19.7012C1.31026 20.2127 2.00396 20.5 2.72727 20.5H17.2727C17.996 20.5 18.6897 20.2127 19.2012 19.7012C19.7127 19.1897 20 18.496 20 17.7727V3.22727C20 2.50396 19.7127 1.81026 19.2012 1.2988C18.6897 0.787337 17.996 0.5 17.2727 0.5ZM16.2375 6.28864L14.2852 14.9148C14.1932 15.3193 13.6795 15.5023 13.3193 15.2557L10.3716 13.2557L8.87045 14.675C8.80924 14.7324 8.73494 14.7741 8.654 14.7963C8.57306 14.8185 8.48791 14.8206 8.40596 14.8025C8.324 14.7844 8.24771 14.7465 8.1837 14.6922C8.11969 14.6379 8.0699 14.5688 8.03864 14.4909L7.49659 12.9L6.95455 11.3091L4.04886 10.5136C3.96762 10.4959 3.89451 10.4518 3.84091 10.3882C3.7873 10.3247 3.75621 10.2452 3.75245 10.1621C3.74869 10.079 3.77248 9.99704 3.82013 9.92889C3.86777 9.86073 3.9366 9.81023 4.01591 9.78523L15.2409 5.74091L15.4477 5.66705C15.883 5.51477 16.333 5.86705 16.2375 6.28864Z" fill="black"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__nav footer__col">
+        <span>Что рекомендуем посетить:</span>
+        <ul class="footer__menu">
+          <li><a href="events.html">Мероприятия</a></li>
+          <li><a href="/#main-events">Ближайшие мероприятия</a></li>
+          <li><a href="/#main-differences">Ключевые отличия</a></li>
+          <li><a href="/#main-history">Истории успеха</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <a class="footer__contact" href="tel:+994123113090">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 0C28.4183 0 32 3.58172 32 8V24C32 28.4183 28.4183 32 24 32H8C3.58172 32 0 28.4183 0 24V8C0 3.58172 3.58172 0 8 0H24ZM11.5791 7.48926C10.9011 6.85498 10.1429 6.84783 9.41016 7.40918C7.0444 9.21357 6.304 11.7431 7.71094 14.3604C10.2955 19.1685 14.1157 22.7853 19.1279 24.998C22.1425 26.3285 23.4551 25.1836 25.3359 23.0039C25.8609 22.3988 25.7224 21.691 25.1865 21.126C24.3593 20.2586 23.5211 19.4023 22.6465 18.5859C21.9174 17.9043 21.1405 17.9442 20.4297 18.6514C20.1563 18.9211 19.8898 19.2014 19.6055 19.5039C19.303 19.8245 18.8042 19.8758 18.4434 19.6172C16.5842 18.3012 14.9869 16.8281 13.6309 15.082C12.5631 13.7009 12.5634 13.7009 13.7588 12.4326C14.7502 11.3828 14.7793 10.7556 13.8135 9.7168C13.0991 8.94771 12.3482 8.20732 11.5791 7.48926Z" fill="black"/>
+        </svg>
+        <div class="footer__info">
+          <span>Номер телефона:</span>
+          <span>+99412 3113090</span>
+        </div>
+      </a>
+      <a class="footer__contact" href="mailto:sales@profexgroup.com">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 16.0651L8.83475 10.375H23.1652L16 16.0651ZM16 17.7728C15.8351 17.7728 15.6701 17.7186 15.5336 17.6101L7.375 11.1313V21.2031C7.375 21.4358 7.56425 21.625 7.79688 21.625H24.2031C24.4358 21.625 24.625 21.4358 24.625 21.2031V11.1312L16.4664 17.6101C16.3298 17.7186 16.1649 17.7728 16 17.7728ZM32 4.89956V27.1005C32 29.8021 29.8021 32 27.1004 32H4.89956C2.19794 32 0 29.8021 0 27.1004V4.89956C0 2.19794 2.19794 0 4.89956 0H27.1005C29.8021 0 32 2.19794 32 4.89956ZM26.125 10.7969C26.125 9.73713 25.2629 8.875 24.2031 8.875H7.79688C6.73712 8.875 5.875 9.73713 5.875 10.7969V21.2031C5.875 22.2629 6.73712 23.125 7.79688 23.125H24.2031C25.2629 23.125 26.125 22.2629 26.125 21.2031V10.7969Z" fill="black"/>
+        </svg>
+        <div class="footer__info">
+          <span>Запросы по продажам:</span>
+          <span>sales@profexgroup.com</span>
+        </div>
+      </a>
+      <a class="footer__contact" href="mailto:management@profexgroup.com">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 16.0651L8.83475 10.375H23.1652L16 16.0651ZM16 17.7728C15.8351 17.7728 15.6701 17.7186 15.5336 17.6101L7.375 11.1313V21.2031C7.375 21.4358 7.56425 21.625 7.79688 21.625H24.2031C24.4358 21.625 24.625 21.4358 24.625 21.2031V11.1312L16.4664 17.6101C16.3298 17.7186 16.1649 17.7728 16 17.7728ZM32 4.89956V27.1005C32 29.8021 29.8021 32 27.1004 32H4.89956C2.19794 32 0 29.8021 0 27.1004V4.89956C0 2.19794 2.19794 0 4.89956 0H27.1005C29.8021 0 32 2.19794 32 4.89956ZM26.125 10.7969C26.125 9.73713 25.2629 8.875 24.2031 8.875H7.79688C6.73712 8.875 5.875 9.73713 5.875 10.7969V21.2031C5.875 22.2629 6.73712 23.125 7.79688 23.125H24.2031C25.2629 23.125 26.125 22.2629 26.125 21.2031V10.7969Z" fill="black"/>
+        </svg>
+        <div class="footer__info">
+          <span>Запросы по продажам:</span>
+          <span>management@profexgroup.com</span>
+        </div>
+      </a>
+      <a class="footer__contact" href="mailto:marketing@profexgroup.com">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 16.0651L8.83475 10.375H23.1652L16 16.0651ZM16 17.7728C15.8351 17.7728 15.6701 17.7186 15.5336 17.6101L7.375 11.1313V21.2031C7.375 21.4358 7.56425 21.625 7.79688 21.625H24.2031C24.4358 21.625 24.625 21.4358 24.625 21.2031V11.1312L16.4664 17.6101C16.3298 17.7186 16.1649 17.7728 16 17.7728ZM32 4.89956V27.1005C32 29.8021 29.8021 32 27.1004 32H4.89956C2.19794 32 0 29.8021 0 27.1004V4.89956C0 2.19794 2.19794 0 4.89956 0H27.1005C29.8021 0 32 2.19794 32 4.89956ZM26.125 10.7969C26.125 9.73713 25.2629 8.875 24.2031 8.875H7.79688C6.73712 8.875 5.875 9.73713 5.875 10.7969V21.2031C5.875 22.2629 6.73712 23.125 7.79688 23.125H24.2031C25.2629 23.125 26.125 22.2629 26.125 21.2031V10.7969Z" fill="black"/>
+        </svg>
+        <div class="footer__info">
+          <span>Запросы по продажам:</span>
+          <span>marketing@profexgroup.com</span>
+        </div>
+      </a>
+      <div class="footer__copy footer__col">
+        <span class="text-up">© 2025 Profex Group. Все права защищены. </span>
+        <div class="footer__link">Сделано в <a href="" class="text-up">factum</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250829145704"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js?_v=20250829145704"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js?_v=20250829145704"></script>
+<script src="https://unpkg.com/gsap@3/dist/SplitText.min.js?_v=20250829145704"></script>
+<script src="js/app.js?_v=20250829145704"></script>
+  </body>
+</html>

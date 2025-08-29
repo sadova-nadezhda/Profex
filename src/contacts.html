@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Главная" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      <section class="contacts section-first section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="contacts__container">
+            <h1 class="contacts__title title-indent">Мы в Telegram</h1>
+            <div class="contacts__txt">Будь в курсе свежих новостей, инсайтов и событий — подпишись на наши Telegram-каналы.</div>
+            <div class="contacts__list">
+              <a class="contacts__item button button-light" href="#">
+                <img src="@img/contact-1.png" alt="">
+                <span>Международные выставки</span>
+              </a>
+              <a class="contacts__item button button-light" href="#">
+                <img src="@img/contact-2.png" alt="">
+                <span>Строительный сектор</span>
+              </a>
+              <a class="contacts__item button button-light" href="#">
+                <img src="@img/contact-3.png" alt="">
+                <span>Цифровые технологии</span>
+              </a>
+              <a class="contacts__item button button-light" href="#">
+                <img src="@img/contact-4.png" alt="">
+                <span>Медицина и здравоохранение</span>
+              </a>
+              <a class="contacts__item button button-light" href="#">
+                <img src="@img/contact-5.png" alt="">
+                <span>Пищевая промышленность</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

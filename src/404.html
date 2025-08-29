@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Главная" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      <section class="page-default page-error section-first section-hidden">
+        <div class="container">
+          <div class="page-default__container page-error__container">
+            <img src="@img/404.png" alt="404 Image">
+            <div class="page-default__box page-error__box">
+              <div class="page-default__txt">Страница не найдена</div>
+              <a href="/" class="page-default__button button button-light"><span>Перейти на главную</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/foot.html')
+  </body>
+</html>

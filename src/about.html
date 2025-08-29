@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Главная" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      <section class="main-hero section-first section-hidden">
+        <div class="container">
+          <div class="main-hero__container">
+            <div class="main-hero__slider">
+              <div class="swiper heroSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide main-hero__slide">
+                    <img src="@img/about-img.png" alt="">
+                    <h1 class="main-hero__title">Profex Group - ваш выход на глобальные рынки без границ</h1>
+                  </div>
+                </div>
+                <div class="hero-pagination swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="main-hero__benefits benefits">
+              <div class="benefits__card">
+                <div class="benefits__num"><span>25</span> лет</div>
+                <div class="benefits__txt">Опыта</div>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__num"><span>40</span>+</div>
+                <div class="benefits__txt">Крупнейших выставок</div>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__num"><span>12</span> стран</div>
+                <div class="benefits__txt"> Востока, Африки и Азии</div>
+              </div>
+              <div class="benefits__card">
+                <div class="benefits__num"><span>100</span>+</div>
+                <div class="benefits__txt">Компаний уже доверили нам</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="about__container">
+            <h2 class="about__title title-indent">20+ лет строим мосты между рынками, компаниями и культурами.</h2>
+            <div class="about__wrap">
+              <div class="about__desc">
+                <div class="about__txt">Profex Group объединяет рынки, компании и культуры, создавая прочные деловые связи через мировые выставки и стратегические партнёрства. Более 20 лет мы сопровождаем бизнес на пути к новым возможностям в странах Ближнего Востока, Азии и Африки.</div>
+                <div class="about__txt">Как эксклюзивный представитель ведущих международных выставок для России и стран СНГ, мы превращаем участие в них в тщательно продуманный выход на рынок — подкреплённый аналитикой, отраслевыми связями и глубоким знанием локальной специфики.</div>
+                <div class="about__txt">С глобальным взглядом, точной организацией и стремлением к долгосрочному успеху, Profex Group становится вашим надёжным партнёром в построении устойчивого присутствия на ключевых международных рынках.</div>
+              </div>
+              <div class="about__img"><img src="@img/about-img-2.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-manifesto section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="main-manifesto__container">
+            <h2 class="main-manifesto__title title-indent">Миссия и ценности</h2>
+            <div class="main-manifesto__wrap" style="background-image: url(../img/mission-img.png);">
+              <div class="main-manifesto__slider">
+                <div class="swiper manifestoSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide main-manifesto__card">
+                      <div class="main-manifesto__caption">Результат выше слов</div>
+                      <!-- 5 строк желательно -->
+                      <div class="main-manifesto__txt">Мы не мерим успех количеством обещаний. Наш язык — это цифры, контракты и достижения, которые говорят громче любых слов.</div>
+                    </div>
+                    <div class="swiper-slide main-manifesto__card">
+                      <div class="main-manifesto__caption">Результат выше слов</div>
+                      <!-- 5 строк желательно -->
+                      <div class="main-manifesto__txt">Мы не мерим успех количеством обещаний. Наш язык — это цифры, контракты и достижения, которые говорят громче любых слов.</div>
+                    </div>
+                    <div class="swiper-slide main-manifesto__card">
+                      <div class="main-manifesto__caption">Результат выше слов</div>
+                      <!-- 5 строк желательно -->
+                      <div class="main-manifesto__txt">Мы не мерим успех количеством обещаний. Наш язык — это цифры, контракты и достижения, которые говорят громче любых слов.</div>
+                    </div>
+                    <div class="swiper-slide main-manifesto__card">
+                      <div class="main-manifesto__caption">Результат выше слов</div>
+                      <!-- 5 строк желательно -->
+                      <div class="main-manifesto__txt">Мы не мерим успех количеством обещаний. Наш язык — это цифры, контракты и достижения, которые говорят громче любых слов.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="main-manifesto-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      @@include('html/history.html') 
+      @@include('html/partners.html') 
+    </main>
+
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

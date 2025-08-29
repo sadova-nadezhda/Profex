@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Главная" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      <section class="events section-first section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="events__container">
+            <h1 class="events__title title-indent">Ближайшие мероприятия</h1>
+            <div class="events__slider">
+              <div class="swiper eventsSwiper">
+                <div class="swiper-wrapper">
+                  <a class="swiper-slide events__slide events-slide" href="events-inner.html">
+                    <img src="@img/post-poster.png" alt="">
+                    <div class="events-slide__bottom">
+                      <div class="events-slide__group">
+                        <div class="events-slide__caption">Gitex Nigeria</div>
+                        <div class="events-slide__txt">1–2 сентября 2025 – Абуджа, 3–4 сентября 2025 – Лагос</div>
+                      </div>
+                      <div class="events-slide__button button">
+                        <span>Перейти к событию</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M15.4 12L9.4 18L8 16.6L12.6 12L8 7.4L9.4 6L15.4 12Z" fill="white"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="swiper-slide events__slide events-slide" href="events-inner.html">
+                    <img src="@img/post-poster.png" alt="">
+                    <div class="events-slide__bottom">
+                      <div class="events-slide__group">
+                        <div class="events-slide__caption">Gitex Nigeria</div>
+                        <div class="events-slide__txt">1–2 сентября 2025 – Абуджа, 3–4 сентября 2025 – Лагос</div>
+                      </div>
+                      <div class="events-slide__button button">
+                        <span>Перейти к событию</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M15.4 12L9.4 18L8 16.6L12.6 12L8 7.4L9.4 6L15.4 12Z" fill="white"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-events main-events-2 section-hidden">
+        <div class="container">
+          <div class="main-events__container">
+            <h2 class="main-events__title events__title">Все мероприятия</h2>
+            <div class="main-events__filter">
+              <select name="">
+                <option value="">Страна</option>
+                <option value="">Казахстан</option>
+                <option value="">Россия</option>
+              </select>
+              <select name="">
+                <option value="">Отрасль</option>
+                <option value="">Отрасль 1</option>
+                <option value="">Отрасль 2</option>
+              </select>
+              <select name="">
+                <option value="">Формат мероприятия</option>
+                <option value="">Онлайн</option>
+                <option value="">Оффлайн</option>
+              </select>
+            </div>
+            <div class="post__cards">
+              <a class="post__card post-card" href="events-inner.html">
+                <div class="post-card__img"><img src="@img/post-poster.png" alt=""></div>
+                <div class="post-card__caption">Gitex Nigeria</div>
+                <div class="post-card__txt">Первое крупное технологическое мероприятие бренда GITEX в Нигерии.</div>
+                <ul class="post-card__meta">
+                  <li>1-2 августа 2025</li>
+                  <li>Абуджа</li>
+                </ul>
+              </a>
+              <a class="post__card post-card" href="events-inner.html">
+                <div class="post-card__img"><img src="@img/post-poster.png" alt=""></div>
+                <div class="post-card__caption">Gitex Nigeria</div>
+                <div class="post-card__txt">Первое крупное технологическое мероприятие бренда GITEX в Нигерии.</div>
+                <ul class="post-card__meta">
+                  <li>1-2 августа 2025</li>
+                  <li>Абуджа</li>
+                </ul>
+              </a>
+              <a class="post__card post-card" href="events-inner.html">
+                <div class="post-card__img"><img src="@img/post-poster.png" alt=""></div>
+                <div class="post-card__caption">Gitex Nigeria</div>
+                <div class="post-card__txt">Первое крупное технологическое мероприятие бренда GITEX в Нигерии.</div>
+                <ul class="post-card__meta">
+                  <li>1-2 августа 2025</li>
+                  <li>Абуджа</li>
+                </ul>
+              </a>
+              <a class="post__card post-card" href="events-inner.html">
+                <div class="post-card__img"><img src="@img/post-poster.png" alt=""></div>
+                <div class="post-card__caption">Gitex Nigeria</div>
+                <div class="post-card__txt">Первое крупное технологическое мероприятие бренда GITEX в Нигерии.</div>
+                <ul class="post-card__meta">
+                  <li>1-2 августа 2025</li>
+                  <li>Абуджа</li>
+                </ul>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>
