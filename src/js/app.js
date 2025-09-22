@@ -278,7 +278,7 @@ window.addEventListener("load", function () {
 
   // modal
 
-    const modalWrapper = document.querySelector('.modals');
+  const modalWrapper = document.querySelector('.modals');
 
   if(modalWrapper) {
     const modal = modalWrapper.querySelector('.modal');
