@@ -1580,9 +1580,6 @@
         width: 50%;
       }
     }
-    &[aria-selected="false"] {
-      cursor: pointer;
-    }
     &[data-complete="true"] {
       &::after {
         width: 100%;

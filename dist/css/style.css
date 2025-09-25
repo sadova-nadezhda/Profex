@@ -2042,10 +2042,6 @@ h6 {
   width: 50%;
 }
 
-.tabs__item[aria-selected=false] {
-  cursor: pointer;
-}
-
 .tabs__item[data-complete=true]::after {
   width: 100%;
 }
