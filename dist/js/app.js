@@ -278,7 +278,7 @@ window.addEventListener("load", function () {
 
   // modal
 
-    const modalWrapper = document.querySelector('.modals');
+  const modalWrapper = document.querySelector('.modals');
 
   if(modalWrapper) {
     const modal = modalWrapper.querySelector('.modal');
@@ -400,6 +400,164 @@ window.addEventListener("load", function () {
     input.addEventListener("blur", mask, false);
     input.addEventListener("keydown", mask, false);
   });
+
+  // Steps Form
+
+  (function() {
+    const form = document.getElementById('progress-form');
+    if (!form) return;
+
+    const tabs = Array.from(form.querySelectorAll('.progress-form__tabs [role="tab"]'));
+    const panels = tabs.map(tab => document.getElementById(tab.getAttribute('aria-controls')));
+    let current = Math.max(0, tabs.findIndex(t => t.getAttribute('aria-selected') === 'true'));
+
+    // ===== helpers =====
+    const reqSel = 'input[required], select[required], textarea[required]';
+    const getButtons = (panel) => ({
+      next: panel.querySelector('[data-action="next"]'),
+      prev: panel.querySelector('[data-action="prev"]'),
+      submit: panel.querySelector('[type="submit"]'),
+    });
+
+    function isEmptySelect(el) {
+      if (el.tagName !== 'SELECT') return false;
+      // invalid if value пустой или выбран disabled option
+      if (el.value === '' || el.value == null) return true;
+      const opt = el.options[el.selectedIndex];
+      return !!(opt && opt.disabled);
+    }
+
+    function fieldOK(el) {
+      return el.checkValidity() && !isEmptySelect(el);
+    }
+
+    function markField(el, ok) {
+      el.classList.toggle('is-invalid', !ok);
+    }
+
+    function getRequiredFields(panel) {
+      return Array.from(panel.querySelectorAll(reqSel));
+    }
+
+    function isPanelValid(panel, { mark = false } = {}) {
+      let valid = true;
+      for (const el of getRequiredFields(panel)) {
+        const ok = fieldOK(el);
+        if (mark) markField(el, ok);
+        if (!ok) valid = false;
+      }
+      return valid;
+    }
+
+    function highestCompleted() {
+      let idx = -1;
+      tabs.forEach((t, i) => { if (t.dataset.complete === 'true') idx = i; });
+      return idx;
+    }
+    function setComplete(i, v) { tabs[i].dataset.complete = v ? 'true' : 'false'; }
+
+    function syncButtons(panel) {
+      const { next, prev, submit } = getButtons(panel);
+      const valid = isPanelValid(panel, { mark: false });
+      if (next) next.disabled = !valid;
+      if (submit) submit.disabled = !valid;
+      if (prev) prev && (prev.disabled = (current === 0));
+    }
+
+    function updateUI() {
+      tabs.forEach((tab, i) => {
+        const selected = i === current;
+        tab.setAttribute('aria-selected', String(selected));
+        tab.setAttribute('tabindex', selected ? '0' : '-1');
+        const lock = i > highestCompleted() + 1; // нельзя прыгать дальше следующего разрешённого
+        tab.setAttribute('aria-disabled', lock ? 'true' : 'false');
+      });
+      panels.forEach((panel, i) => {
+        panel.hidden = i !== current;
+        if (i === current) {
+          syncButtons(panel);
+          panel.focus({ preventScroll: false });
+        }
+      });
+    }
+
+    function goTo(index) {
+      if (index < 0 || index >= tabs.length) return;
+      const canJump = index <= highestCompleted() + 1;
+      if (!canJump && index > current) return;
+      current = index;
+      updateUI();
+    }
+
+    function nextStep() {
+      const panel = panels[current];
+      if (!isPanelValid(panel, { mark: true })) {
+        syncButtons(panel);
+        const firstInvalid = panel.querySelector('.is-invalid') || getRequiredFields(panel).find(el => !fieldOK(el));
+        if (firstInvalid) firstInvalid.focus({ preventScroll: false });
+        return;
+      }
+      setComplete(current, true);
+      goTo(current + 1);
+    }
+
+    function prevStep() { goTo(current - 1); }
+
+    // ===== listeners =====
+    form.querySelector('.progress-form__tabs').addEventListener('click', (e) => {
+      const tab = e.target.closest('[role="tab"]');
+      if (!tab || tab.getAttribute('aria-disabled') === 'true') return;
+      goTo(tabs.indexOf(tab));
+    });
+
+    form.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-action]');
+      if (!btn) return;
+      if (btn.dataset.action === 'next') nextStep();
+      if (btn.dataset.action === 'prev') prevStep();
+    });
+
+    // Валидируем только взаимодействуемое поле
+    panels.forEach(panel => {
+      panel.addEventListener('change', (e) => {
+        const el = e.target;
+        if (!(el instanceof HTMLElement)) return;
+        if (el.matches(reqSel)) {
+          markField(el, fieldOK(el));
+          if (panels[current] === panel) syncButtons(panel);
+        }
+      });
+      panel.addEventListener('blur', (e) => {
+        const el = e.target;
+        if (!(el instanceof HTMLElement)) return;
+        if (el.matches(reqSel)) {
+          markField(el, fieldOK(el));
+          if (panels[current] === panel) syncButtons(panel);
+        }
+      }, true);
+      panel.addEventListener('input', (e) => {
+        const el = e.target;
+        if (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement) {
+          // live-снятие ошибки при вводе
+          markField(el, fieldOK(el));
+          if (panels[current] === panel) syncButtons(panel);
+        }
+      });
+    });
+
+    form.addEventListener('submit', (e) => {
+      const panel = panels[current];
+      if (!isPanelValid(panel, { mark: true })) {
+        e.preventDefault();
+        syncButtons(panel);
+        const firstInvalid = panel.querySelector('.is-invalid');
+        if (firstInvalid) firstInvalid.focus({ preventScroll: false });
+      }
+    });
+
+    // init
+    updateUI();
+  })();
 
   window.addEventListener("scroll", ()=> {
     checkScroll();

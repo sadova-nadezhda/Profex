@@ -141,7 +141,7 @@
               <div class="events-feedback__txt">Если вы заинтересованы в участии в выставке INDEX Saudi Arabia 2025, пожалуйста, заполните форму ниже, и наша специализированная команда предоставит вам всю необходимую информацию и поддержку.</div>
             </div>
             <div class="events-feedback__form form">
-              <form action="">
+              <!-- <form action="">
                 <div class="form__group">
                   <div class="form__caption">Личная информация</div>
                   <div class="form__fields">
@@ -161,6 +161,169 @@
                   </div>
                 </div>
                 <button class="form__button button button-primary"><span>Запросить консультацию</span></button>
+              </form> -->
+              <form id="progress-form" class="progress-form form" action="">
+
+                <!-- Step Navigation -->
+                <div class="progress-form__tabs tabs" role="tablist">
+                  <button id="progress-form__tab-1" class="progress-form__tabs-item tabs__item" type="button" role="tab" aria-controls="progress-form__panel-1" aria-selected="true">
+                    Контакты
+                  </button>
+                  <button id="progress-form__tab-2" class="progress-form__tabs-item tabs__item" type="button" role="tab" aria-controls="progress-form__panel-2" aria-selected="false" tabindex="-1" aria-disabled="true">
+                    Компания
+                  </button>
+                  <button id="progress-form__tab-3" class="progress-form__tabs-item tabs__item" type="button" role="tab" aria-controls="progress-form__panel-3" aria-selected="false" tabindex="-1" aria-disabled="true">
+                    Деятельность
+                  </button>
+                  <button id="progress-form__tab-4" class="progress-form__tabs-item tabs__item" type="button" role="tab" aria-controls="progress-form__panel-4" aria-selected="false" tabindex="-1" aria-disabled="true">
+                    Мероприятие
+                  </button>
+                  <button id="progress-form__tab-5" class="progress-form__tabs-item tabs__item" type="button" role="tab" aria-controls="progress-form__panel-5" aria-selected="false" tabindex="-1" aria-disabled="true">
+                    Дополнительно
+                  </button>
+                </div>
+                <!-- / End Step Navigation -->
+
+                <!-- Step 1 -->
+                <div class="form__group" id="progress-form__panel-1" role="tabpanel" aria-labelledby="progress-form__tab-1" tabindex="0">
+                  <div class="form__caption">Контактная информация</div>
+                  <div class="form__fields col-5">
+                    <input type="text" name="name" placeholder="Ваше имя*" required>
+                    <input type="text" name="lastname" placeholder="Ваша фамилия*" required>
+                    <input type="text" name="position" placeholder="Должность*" required>
+                    <input type="tel" name="work-phone" placeholder="Рабочий телефон*" required>
+                    <input type="tel" name="in-phone" placeholder="Внутренний номер*" required>
+                    <input type="tel" name="mob-phone" placeholder="Мобильный телефон*" required>
+                    <input type="text" name="message" placeholder="Мессенджер*" required>
+                    <input type="email" name="email" placeholder="Эл.почта*" required>
+                    <input type="text" name="social" placeholder="Социальный медиа канал*" required>
+                  </div>
+                  <div class="form__bottom">
+                    <button type="button" class="button button-primary" data-action="next"><span>Далее</span></button>
+                  </div>
+                </div>
+                <!-- / End Step 1 -->
+
+                <!-- Step 2 -->
+                <div class="form__group" id="progress-form__panel-2" role="tabpanel" aria-labelledby="progress-form__tab-2" tabindex="0" hidden>
+                  <div class="form__caption">Компания</div>
+                  <div class="form__fields col-3">
+                    <input type="text" name="company-name" placeholder="Название компании*" required>
+                    <input type="text" name="company-link" placeholder="Вебсайт компании*" required>
+                    <input type="text" name="address" placeholder="Адрес*" required>
+                    <input type="text" name="city" placeholder="Город*" required>
+                    <input type="text" name="country" placeholder="Страна*" required>
+                    <input type="text" name="industry" placeholder="Отрасль*" required>
+                    <!-- <select name="country" required>
+                      <option value="" disabled selected hidden>Страна*</option>
+                      <option value="v">Страна 1</option>
+                      <option value="v">Страна 2</option>
+                    </select>
+                    <select name="industry" required>
+                      <option value="" disabled selected hidden>Отрасль*</option>
+                      <option value="v">Отрасль 1</option>
+                      <option value="v">Отрасль 2</option>
+                    </select> -->
+                  </div>
+                  <div class="form__bottom">
+                    <button type="button" class="button button-border" data-action="prev"><span>Назад</span></button>
+                    <button type="button" class="button button-primary" data-action="next"><span>Далее</span></button>
+                  </div>
+                </div>
+                <!-- / End Step 2 -->
+
+                <!-- Step 3 -->
+                <div class="form__group" id="progress-form__panel-3" role="tabpanel" aria-labelledby="progress-form__tab-3" tabindex="0" hidden>
+                  <div class="form__caption">Деятельность и продукты</div>
+                  <div class="form__fields">
+                    <select name="services">
+                      <option value="" disabled selected hidden>Вид услуги</option>
+                      <option value="v">Аренда площади</option>
+                      <option value="v">Организация дизайна, монтажных и демонтажных работ по стенду</option>
+                      <option value="v">Организация PR-поддержки</option>
+                      <option value="v">Организация продвижения в социальных медиа каналах</option>
+                      <option value="v">Организация индивидуального или группового участия посетителей/делегатов</option>
+                      <option value="v">Организация логистики и перевозки экспонатов</option>
+                      <option value="v">Подготовка маркетинговых материалов</option>
+                      <option value="v">Организация B2B встреч / бизнес-миссии</option>
+                      <option value="v">Организация спонсорского участия</option>
+                      <option value="v">Организация участия докладчика в конференции</option>
+                      <option value="v">Другое</option>
+                    </select>
+                    <select name="type">
+                      <option value="" disabled selected hidden>Тип деятельности</option>
+                      <option value="v">Производитель</option>
+                      <option value="v">Дистрибьютор</option>
+                      <option value="v">Девелопер</option>
+                      <option value="v">Государственное учреждение</option>
+                      <option value="v">Импортер / Экспортер</option>
+                      <option value="v">Сервисная компания</option>
+                      <option value="v">Проектировщик / Архитектор / Дизайнер</option>
+                      <option value="v">Оптовик / Ритейлер</option>
+                      <option value="v">Ассоциация / Союз / Палата</option>
+                      <option value="v">Консалтинговая компания</option>
+                      <option value="v">Образовательное учреждение</option>
+                      <option value="v">Инвестор / Венчурный фонд</option>
+                      <option value="v">Медиа / Издательство</option>
+                      <option value="v">Стартап / Инновационная компания</option>
+                      <option value="v">НПО / Международная организация</option>
+                      <option value="v">Другое</option>
+                    </select>
+                  </div>
+                  <div class="form__bottom">
+                    <button type="button" class="button button-border" data-action="prev"><span>Назад</span></button>
+                    <button type="button" class="button button-primary" data-action="next"><span>Далее</span></button>
+                  </div>
+                </div>
+                <!-- / End Step 3 -->
+
+                <!-- Step 4 -->
+                <div class="form__group" id="progress-form__panel-4" role="tabpanel" aria-labelledby="progress-form__tab-4" tabindex="0" hidden>
+                  <div class="form__caption">Участие в мероприятии</div>
+                  <div class="form__fields">
+                    <input type="text" name="events-name" placeholder="Название мероприятия">
+                    <input type="text" name="events-country" placeholder="Страна мероприятия*">
+                    <select name="type" required>
+                      <option value="" disabled selected hidden>Формат участия*</option>
+                      <option value="v">Индивидуальный стенд</option>
+                      <option value="v">Коллективный или региональный стенд</option>
+                      <option value="v">Национальный стенд</option>
+                      <option value="v">Визит без стенда</option>
+                      <option value="v">Деловая миссия / B2B встречи</option>
+                      <option value="v">Информационный партнёр / Медиа-партнёр</option>
+                      <option value="v">Спонсорство / Партнёрство</option>
+                      <option value="v">Выступление / Спикер</option>
+                      <option value="v">Посетитель-эксперт / Программа для покупателей</option>
+                      <option value="v">Другое</option>
+                    </select>
+                  </div>
+                  <div class="form__bottom">
+                    <button type="button" class="button button-border" data-action="prev"><span>Назад</span></button>
+                    <button type="button" class="button button-primary" data-action="next"><span>Далее</span></button>
+                  </div>
+                </div>
+                <!-- / End Step 4 -->
+
+                <!-- Step 5 -->
+                <div class="form__group" id="progress-form__panel-5" role="tabpanel" aria-labelledby="progress-form__tab-5" tabindex="0" hidden>
+                  <div class="form__caption">Дополнительно</div>
+                  <div class="form__fields">
+                    <input type="text" name="big-message" placeholder="Сообщение">
+                    <select name="type" required>
+                      <option value="" disabled selected hidden>Предпочтительный канал связи*</option>
+                      <option value="v">Рабочий телефон</option>
+                      <option value="v">Мобильный телефон</option>
+                      <option value="v">Мессенджер</option>
+                      <option value="v">Эл.почта</option>
+                    </select>
+                  </div>
+                  <div class="form__bottom">
+                    <button type="button" class="button button-border" data-action="prev"><span>Назад</span></button>
+                    <button type="submit" class="button button-primary"><span>Отправить</span></button>
+                  </div>
+                </div>
+                <!-- / End Step 5 -->
+
               </form>
             </div>
           </div>
