@@ -264,7 +264,12 @@ select {
       background: var(--light, $light);
     }
   }
-  &:hover {
+  &-border {
+    border-color: var(--dark, $dark);
+    color: var(--dark, $dark);
+    background: var(--light, $light);
+  }
+  &:not(:disabled):hover {
     &::before {
       opacity: 1;
     }

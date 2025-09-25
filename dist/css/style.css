@@ -296,7 +296,13 @@ select:hover {
   background: var(--light, #FFFFFF);
 }
 
-.button:hover::before {
+.button-border {
+  border-color: var(--dark, #000000);
+  color: var(--dark, #000000);
+  background: var(--light, #FFFFFF);
+}
+
+.button:not(:disabled):hover::before {
   opacity: 1;
 }
 
